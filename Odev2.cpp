@@ -21,8 +21,8 @@ int value(char r)
         return 500; 
     if (r == 'M') 
         return 1000; 
-        //küçük harf de kabul etmesi için yukardakinin aynısını küçük harflerle tekrarladım.
-    if (r == 'ı') 
+        //kÃ¼Ã§Ã¼k harf de kabul etmesi iÃ§in yukardakinin aynÃ½sÃ½nÃ½ kÃ¼Ã§Ã¼k harflerle tekrarladÃ½m.
+    if (r == 'i') 
         return 1; 
     if (r == 'v') 
         return 5; 
@@ -37,7 +37,7 @@ int value(char r)
     if (r == 'm') 
         return 1000; 
   
-    return -1; // farklı bir sembol girildiğinde -1 değerini veriyor 
+    return -1; // farklÃ½ bir sembol girildiÃ°inde -1 deÃ°erini veriyor 
 } 
   
 
@@ -83,22 +83,22 @@ int romanToOndalik(string &str)
 int main() 
 { 
 	setlocale(LC_ALL,"Turkish");
-	cout<<"Roma rakamlarını ondalık sayıya cevirmek için 1 e basınız."<<endl;
-	cout<<"Ondalık sayıyı Roma rakamlarına çevirmek için 2 e basınız."<<endl;
+	cout<<"Roma rakamlarÄ±nÄ± ondalÄ±k sayÄ±ya cevirmek iÃ§in 1 e basiniz."<<endl;
+	cout<<"OndalÄ±k sayiyi Roma rakamlarina Ã§evirmek iÃ§in 2 e basiniz."<<endl;
 	int secim;
 	cin>>secim;
     if(secim==1) {
-	cout<<"Ondalık sayıya çevirmek istediğiniz Roma rakamlarını giriniz"<<endl;
+	cout<<"Ondalik sayiya Ã§evirmek istediÃ°iniz Roma rakamlarini giriniz"<<endl;
     string str;
 	cin>>str; 
-    cout << "Girdiğiniz roma rakamının ondalık sayıdaki gösterimi  "<< romanToOndalik(str) << endl; 
+    cout << "GirdiÄŸiniz roma rakamÄ±nÄ±n ondalÄ±k sayÄ±daki gÃ¶sterimi   "<< romanToOndalik(str) << endl; 
   	getch();
 	
     return 0; 
 	}
 	if(secim==2)
 	{
-		cout<<"Roma rakamlarına çevirmek istediğiniz sayıyı giriniz."<<endl;
+		cout<<"Roma rakamlarÄ±na Ã§evirmek istediÄŸiniz sayÄ±yÄ± giriniz."<<endl;
 		string sayi2;
 		cin >>sayi2;
 		stringstream geek(sayi2);
